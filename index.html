@@ -3,23 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Проверка</title>
+    <title>Шапка сайта</title>
     <style>
         body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
             margin: 0;
-            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
         }
-        h1 {
-            font-size: 50px;
-            color: #333;
+        .header {
+            background-color: #1a1a1a;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            border-bottom: 1px solid #333;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            color: #f7a909;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .logo img {
+            height: 30px;
+            margin-right: 10px;
+        }
+        .telegram-button {
+            background-color: transparent;
+            border: 2px solid #f7a909;
+            color: #f7a909;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        .telegram-button:hover {
+            background-color: #f7a909;
+            color: #1a1a1a;
         }
     </style>
 </head>
 <body>
-    <h1>РАБОТАЕТ</h1>
+    <header class="header">
+        <div class="logo">
+            <img src="logo.svg" alt="Логотип"> ГЛАЗ БОГА
+        </div>
+        <a href="https://t.me/your_bot_link" class="telegram-button" target="_blank">Telegram bot</a>
+    </header>
 </body>
 </html>
+
